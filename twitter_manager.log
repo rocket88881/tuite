@@ -1,0 +1,30 @@
+2025-05-09 04:31:24,053 - ConfigManager - ERROR - 配置文件初始化失败: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-09 04:31:24,053 - Main - ERROR - 应用程序崩溃: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Traceback (most recent call last):
+  File "F:\TwitterManager\main.py", line 23, in main
+    window = MainWindow()
+             ^^^^^^^^^^^^
+  File "F:\TwitterManager\ui\main_window.py", line 19, in __init__
+    self.config = ConfigManager()
+                  ^^^^^^^^^^^^^^^
+  File "F:\TwitterManager\core\config_manager.py", line 13, in __init__
+    self._ensure_config_exists()
+  File "F:\TwitterManager\core\config_manager.py", line 24, in _ensure_config_exists
+    content = f.read()
+              ^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-09 04:37:25,591 - Main - ERROR - 应用程序崩溃: 'ConfigManager' object has no attribute 'getint'
+Traceback (most recent call last):
+  File "F:\TwitterManager\main.py", line 23, in main
+    window = MainWindow()
+             ^^^^^^^^^^^^
+  File "F:\TwitterManager\ui\main_window.py", line 20, in __init__
+    self.init_ui()
+  File "F:\TwitterManager\ui\main_window.py", line 27, in init_ui
+    settings = self.config.get_app_settings()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\TwitterManager\core\config_manager.py", line 59, in get_app_settings
+    'font_size': self.getint('DEFAULT', 'font_size', 10),
+                 ^^^^^^^^^^^
+AttributeError: 'ConfigManager' object has no attribute 'getint'

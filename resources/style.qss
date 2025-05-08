@@ -1,0 +1,164 @@
+/* 主窗口样式 */
+QMainWindow {
+    background-color: #f5f8fa;
+    font-family: "Roboto", "Microsoft YaHei", sans-serif;
+}
+
+/* 按钮样式 */
+QPushButton {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #1991db;
+}
+
+QPushButton:disabled {
+    background-color: #9ac4e8;
+    color: #e1e8ed;
+}
+
+QPushButton#danger {
+    background-color: #e0245e;
+}
+
+QPushButton#danger:hover {
+    background-color: #c01a4f;
+}
+
+/* 列表样式 */
+QListWidget {
+    background-color: white;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QListWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+QListWidget::item:hover {
+    background-color: #f5f8fa;
+}
+
+QListWidget::item:selected {
+    background-color: #e8f5fd;
+    color: #1da1f2;
+}
+
+/* 选项卡样式 */
+QTabWidget::pane {
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    margin-top: -1px;
+}
+
+QTabBar::tab {
+    background: #e1e8ed;
+    padding: 8px 16px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background: white;
+    border-bottom: 2px solid #1da1f2;
+    font-weight: bold;
+}
+
+QTabBar::tab:hover {
+    background: #f5f8fa;
+}
+
+/* 输入框样式 */
+QTextEdit, QLineEdit, QSpinBox, QComboBox {
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    padding: 8px;
+    background: white;
+}
+
+QTextEdit:hover, QLineEdit:hover, QSpinBox:hover, QComboBox:hover {
+    border-color: #aab8c2;
+}
+
+QTextEdit:focus, QLineEdit:focus, QSpinBox:focus, QComboBox:focus {
+    border-color: #1da1f2;
+}
+
+/* 标签样式 */
+QLabel {
+    color: #14171a;
+    font-weight: bold;
+}
+
+/* 分组框样式 */
+QGroupBox {
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px;
+}
+
+/* 进度条样式 */
+QProgressBar {
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    text-align: center;
+    background: white;
+}
+
+QProgressBar::chunk {
+    background-color: #1da1f2;
+    width: 10px;
+}
+
+/* 复选框样式 */
+QCheckBox {
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QCheckBox::indicator:unchecked {
+    border: 1px solid #e1e8ed;
+    background: white;
+    border-radius: 2px;
+}
+
+QCheckBox::indicator:checked {
+    border: 1px solid #1da1f2;
+    background: #1da1f2;
+    border-radius: 2px;
+    image: url(:/qss_icons/checkbox_checked.png);
+}
+
+/* 状态栏样式 */
+QStatusBar {
+    background: #e1e8ed;
+    border-top: 1px solid #aab8c2;
+    padding: 2px;
+}
+
+QStatusBar::item {
+    border: none;
+}

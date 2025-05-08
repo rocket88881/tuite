@@ -1,0 +1,40 @@
+2025-05-09 03:42:47 - TwitterManager - INFO - 应用程序启动
+2025-05-09 03:42:47 - TwitterManager.MainWindow - DEBUG - 初始化主窗口UI
+2025-05-09 03:42:47 - TwitterManager.MainWindow - DEBUG - 加载应用设置: {'theme': 'light', 'font_size': 10, 'api_timeout': 30, 'max_threads': 5, 'auto_save': True, 'save_interval': 5}
+2025-05-09 03:42:47 - TwitterManager - ERROR - 应用程序错误: 'LoginPanel' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "F:\TwitterManager\main.py", line 34, in main
+    window = MainWindow()
+  File "F:\TwitterManager\ui\main_window.py", line 20, in __init__
+    self.init_ui()
+    ~~~~~~~~~~~~^^
+  File "F:\TwitterManager\ui\main_window.py", line 43, in init_ui
+    self.login_panel = LoginPanel(self.config)
+                       ~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\TwitterManager\ui\login_panel.py", line 32, in __init__
+    self.init_ui()
+    ~~~~~~~~~~~~^^
+  File "F:\TwitterManager\ui\login_panel.py", line 36, in init_ui
+    self.logger.debug("初始化登录面板UI")
+    ^^^^^^^^^^^
+AttributeError: 'LoginPanel' object has no attribute 'logger'. Did you mean: 'lower'?
+2025-05-09 03:43:01 - TwitterManager - INFO - 应用程序启动
+2025-05-09 03:43:01 - TwitterManager.MainWindow - DEBUG - 初始化主窗口UI
+2025-05-09 03:43:01 - TwitterManager.MainWindow - DEBUG - 加载应用设置: {'theme': 'light', 'font_size': 10, 'api_timeout': 30, 'max_threads': 5, 'auto_save': True, 'save_interval': 5}
+2025-05-09 03:43:01 - TwitterManager - ERROR - 应用程序错误: 'LoginPanel' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "F:\TwitterManager\main.py", line 34, in main
+    window = MainWindow()
+  File "F:\TwitterManager\ui\main_window.py", line 20, in __init__
+    self.init_ui()
+    ~~~~~~~~~~~~^^
+  File "F:\TwitterManager\ui\main_window.py", line 43, in init_ui
+    self.login_panel = LoginPanel(self.config)
+                       ~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\TwitterManager\ui\login_panel.py", line 32, in __init__
+    self.init_ui()
+    ~~~~~~~~~~~~^^
+  File "F:\TwitterManager\ui\login_panel.py", line 36, in init_ui
+    self.logger.debug("初始化登录面板UI")
+    ^^^^^^^^^^^
+AttributeError: 'LoginPanel' object has no attribute 'logger'. Did you mean: 'lower'?
